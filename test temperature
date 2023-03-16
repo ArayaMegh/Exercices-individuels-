@@ -1,0 +1,45 @@
+
+//const temperatureIdealeEte = 25
+//var temperatureActuelle = 32
+
+// if(temperatureActuelle < temperatureIdeale) {}
+//   for(temperatureActuelle; temperactuelleActuelle < temperatureIdeale; temperatureActuelle++) {
+//       console.log('chauffage', temperatureActuelle)
+//    }
+// } else {
+//    for(temperatureActuelle; temperactuelleActuelle > temperatureIdeale; temperatureActuelle--) {
+//        console.log('clim', temperatureActuelle)
+//    }
+// }
+// console.log(temperatureActuelle)
+
+
+
+var temperatureIdeale
+var temperatureActuelle = 32
+const ete = true 
+
+if(ete == true) {
+    temperatureIdeale = 25
+} else {
+    temperatureIdeale = 19
+}
+console.log(' temperature ideale : ', temperatureIdeale)
+
+// tant que la temperature actuelle est differente de la temperature ideale
+while (temperatureActuelle != temperatureIdeale) {
+    // si la temperature actuelle est inférieure à la temperature idéale
+    if (temperatureActuelle < temperatureIdeale) {
+        console.log('chauffage')
+        // on met le chauffage parce qu'on a froid
+        // pour ça on augmente la température actuelle de 1 degré
+        temperatureActuelle = temperatureActuelle + 1
+        // sinon si la temperature actuelle est supérieure à la température idéale
+   } else {
+        console.log('climatisation')
+        //on met la clim parce qu'on a chaud
+        // pour ça on diminue la temperature actuelle de 1 degré
+        temperatureActuelle = temperatureActuelle - 1
+   }
+}
+console.log('resultat final : ', temperatureActuelle)
